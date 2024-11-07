@@ -1,0 +1,17 @@
+{
+  "name": "wiz_rocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "concurrently \"npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch\" \"live-server ./build\"",
+    "prettier": "npx prettier --write './build/*.html'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
+}
